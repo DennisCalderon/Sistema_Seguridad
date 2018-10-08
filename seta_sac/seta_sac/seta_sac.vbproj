@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDF61DB8-95F8-4873-BCFE-F614A5BEE498}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>seta_sac.My.MyApplication</StartupObject>
+    <RootNamespace>seta_sac</RootNamespace>
+    <AssemblyName>seta_sac</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>seta_sac.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>seta_sac.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="bases.Designer.vb">
+      <DependentUpon>bases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CARGO.Designer.vb">
+      <DependentUpon>CARGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CARGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desarrolladores.Designer.vb">
+      <DependentUpon>Desarrolladores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desarrolladores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="det_rol_mensual.Designer.vb">
+      <DependentUpon>det_rol_mensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="det_rol_mensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados.Designer.vb">
+      <DependentUpon>empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_principal.Designer.vb">
+      <DependentUpon>Menu_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion.Designer.vb">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reemplazo.Designer.vb">
+      <DependentUpon>reemplazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reemplazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rol_mensual_vigilantes.Designer.vb">
+      <DependentUpon>rol_mensual_vigilantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rol_mensual_vigilantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serv_diario.Designer.vb">
+      <DependentUpon>serv_diario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="serv_diario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vigilantes.Designer.vb">
+      <DependentUpon>Vigilantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vigilantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bases.resx">
+      <DependentUpon>bases.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CARGO.resx">
+      <DependentUpon>CARGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desarrolladores.resx">
+      <DependentUpon>Desarrolladores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="det_rol_mensual.resx">
+      <DependentUpon>det_rol_mensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados.resx">
+      <DependentUpon>empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_principal.resx">
+      <DependentUpon>Menu_principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion.resx">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reemplazo.resx">
+      <DependentUpon>reemplazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rol_mensual_vigilantes.resx">
+      <DependentUpon>rol_mensual_vigilantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serv_diario.resx">
+      <DependentUpon>serv_diario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vigilantes.resx">
+      <DependentUpon>Vigilantes.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO.ico" />
+    <None Include="Resources\Lighthouse.jpg" />
+    <None Include="Resources\casita.png" />
+    <None Include="Resources\fondo_verde_oscuro.jpg" />
+    <None Include="Resources\fondo_letras_verde.oscuro.jpg" />
+    <None Include="Resources\fondo_negro_flores.jpg" />
+    <None Include="Resources\fondo_letras_verde.oscuro1.jpg" />
+    <None Include="Resources\fondo_celeste_verde.jpg" />
+    <None Include="Resources\fondo_letras_verde.oscuro2.jpg" />
+    <Content Include="Resources\Penguins.jpg" />
+    <Content Include="Resources\wefef.jpg" />
+    <None Include="Resources\Desert.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
